@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+
+    <style>
+
+        *{
+            /* display: flex; */
+            justify-content: center;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(212, 249, 255);
+        }
+
+
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+
+        }
+
+        .box input {
+            display: flex;
+            width: 94%;
+            font-size: 27px;
+            text-align: center;
+            margin: 25px auto;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .box input:hover {
+            background-color: rgb(241, 240, 237);
+        }
+
+
+        button {
+
+            margin: 70px auto;
+            height: 67px;
+            font-size: 27px;
+            padding: 16px 72px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #f7eaea;
+            transition-property: background-color;
+            transition-duration: 2s;
+            display: flex;
+
+        }
+
+        .box h1 {
+            display: flex;
+            width: 309px;
+            margin: 50px auto;
+            font-family: cursive;
+            font-size: 35px;
+        }
+
+
+
+        button:hover {
+
+            background-color: rgb(85, 171, 211);
+        }
+
+        @media (min-width: 300px) and (max-width:500px) {
+
+           *{
+            /* display: flex; */
+            justify-content: center;
+        }
+        }
+
+        @media (min-width: 300px) and (max-width:520px) {
+
+            .box input {
+                display: flex;
+                width: 70%;
+                font-size: 20px;
+                text-align: center;
+                margin: 25px auto;
+                padding: 15px;
+                border-radius: 10px;
+                cursor: pointer;
+
+            }
+        }
+
+
+        @media (min-width: 300px) and (max-width:520px) {
+
+            .box h1 {
+                display: flex;
+                width: 280px;
+                margin: 40px auto;
+                font-family: cursive;
+                font-size: 30px;
+            }
+
+        }
+
+        @media (min-width: 300px) and (max-width:500px) {
+
+            button {
+
+                margin: 60px auto;
+                height: 60px;
+                font-size: 22px;
+                padding: 16px 72px;
+                text-align: center;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #f7eaea;
+                transition-property: background-color;
+                transition-duration: 2s;
+                display: flex;
+
+            }
+
+
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <form action="action.php">
+
+        <div class="box">
+
+            <h1>Submit Your Form</h1>
+
+            <input type="text" name="" id="name" placeholder="Name">
+            <input type="email" name="" id="email" placeholder="Email">
+            <input type="tel" name="" id="mobile" placeholder="Mobile">
+            <input type="text" name="" id="address" placeholder="Address">
+            <input type="password" name="" id="password" placeholder="Password">
+            <button type="submit">Submit Now
+            </button>
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Oader</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        /* navbar start hare */
+        nav {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            background-color: black;
+            height: 80px;
+
+
+        }
+
+        .navbar ul {
+            display: flex;
+            float: right;
+            padding-right: 30px;
+
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            line-height: 52px;
+            margin: 0px 13px;
+
+        }
+
+        .navbar ul li a {
+            color: white;
+            font-size: 20px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+        }
+
+        #logo span {
+            color: white;
+            font-size: 38px;
+            float: left;
+            margin: 18px 60px;
+            text-transform: uppercase;
+
+
+        }
+
+
+        a:hover,
+        a.item {
+            transition: 0.5s;
+            border-radius: 8px;
+            background-color: gray;
+        }
+
+        /* navbar meadia */
+        @media (max-width: 800px) {
+
+            #logo {
+                display: none;
+            }
+
+            .navbar {
+
+                display: flex;
+                justify-content: center;
+
+            }
+
+
+
+        }
+
+        @media (max-width: 490px) {
+
+            #logo {
+                display: none;
+            }
+
+            .navbar {
+
+                display: flex;
+
+                justify-content: center;
+
+            }
+
+            .navbar ul li a {
+                color: white;
+                font-size: 10px;
+                padding: 7px 13px;
+                text-transform: uppercase;
+                text-decoration: none;
+
+            }
+
+            .navbar ul li {
+                display: inline-block;
+                line-height: 30px;
+                margin: 0px 13px;
+
+            }
+
+            nav {
+                position: fixed;
+                z-index: 2;
+                width: 100%;
+                background-color: black;
+                height: 60px;
+
+
+            }
+
+
+
+
+        }
+
+        /* content start hare */
+        .box {
+            margin-top: 81px;
+            /* margin: 22px; */
+            height: 70vh;
+            padding-bottom: 89px;
+            display: inline-block;
+            border-bottom: 2px solid black;
+        }
+
+        #photo {
+            display: inline-block;
+        }
+
+        #photo img {
+            width: 272px;
+            margin-left: 80px;
+            margin-top: 55px;
+            height: 495px;
+            transition: all 0.5s;
+        }
+
+        #photo img:hover {
+            transform: scale(1.1);
+        }
+
+
+        #content {
+            float: right;
+            font-size: 20px;
+            width: 60%;
+            height: 552px;
+        }
+
+        #content h1 {
+            margin-top: 70px;
+        }
+
+        #content p {
+            margin-top: 43px;
+        }
+
+        #btn {
+            height: 97px;
+            margin: 0px;
+            margin-top: 52px;
+
+
+        }
+
+        #btn button {
+            width: 140px;
+            height: 64px;
+            cursor: pointer;
+            border-radius: 10px;
+            /* background-color: aqua; */
+        }
+
+        #btn button:hover {
+            transition: 1s;
+            border-radius: 10px;
+            background-color: #d8d8d8;
+        }
+
+
+        #btn button a {
+            text-decoration: none;
+            font-size: 20px;
+            /* color: black; */
+        }
+
+        /* CONTENT @ MEDIA CUVARI */
+
+        @media (max-width:1025px) {
+
+            .box {
+                margin-top: 81px;
+                /* margin: 22px; */
+                height: 43vh;
+                padding-bottom: 12px;
+                display: inline-block;
+                border-bottom: 2px solid black;
+            }
+
+            #photo img {
+                width: 200px;
+                margin-left: 50px;
+                margin-top: 55px;
+                height: 355px;
+                transition: all 0.5s;
+            }
+
+            #content {
+                float: right;
+                font-size: 12px;
+                width: 55%;
+                height: 552px;
+            }
+
+
+
+        }
+
+
+        @media (max-width:560px) {
+
+            .box {
+                margin-top: 81px;
+                /* margin: 22px; */
+                height: 50vh;
+                padding-bottom: 0px;
+                display: inline-block;
+                border-bottom: 2px solid black;
+            }
+
+            #photo img {
+                width: 130px;
+                margin-left: 30px;
+                margin-top: 55px;
+                height: 240px;
+                transition: all 0.5s;
+            }
+
+            #content {
+                float: right;
+                font-size: 9px;
+                width: 50%;
+                height: 552px;
+            }
+
+            #content h1 {
+                margin-top: 60px;
+                font-size: 12px;
+            }
+
+            #content p {
+                margin-top: 33px;
+                font-size: 9px;
+            }
+
+            #btn {
+                height: 45px;
+                margin: 0px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: start;
+
+
+            }
+
+            #btn button {
+                width: 70px;
+                height: 32px;
+                cursor: pointer;
+                border-radius: 10px;
+                /* background-color: aqua; */
+            }
+
+            #btn button:hover {
+                transition: 1s;
+                border-radius: 10px;
+                background-color: #d8d8d8;
+            }
+
+
+            #btn button a {
+                text-decoration: none;
+                margin-bottom: 10px;
+                font-size: 10px;
+                /* color: black; */
+            }
+
+        }
+
+        @media (max-width:322px) {
+
+            .box {
+                margin-top: 60px;
+                /* margin: 22px; */
+                height: 60vh;
+                padding-bottom: 0px;
+                display: inline-block;
+                border-bottom: 2px solid black;
+            }
+
+            #content h1 {
+                margin-top: 30px;
+                font-size: 12px;
+            }
+
+
+            #content p {
+                margin-top: 15px;
+                font-size: 9px;
+            }
+
+            #photo img {
+                width: 100px;
+                margin-left: 30px;
+                margin-top: 30px;
+                height: 210px;
+                transition: all 0.5s;
+            }
+
+            #btn {
+                height: 45px;
+                margin: 0px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: start;
+
+
+            }
+
+            #btn button {
+                width: 60px;
+                height: 30px;
+                cursor: pointer;
+                border-radius: 10px;
+                /* background-color: aqua; */
+            }
+
+            #btn button:hover {
+                transition: 1s;
+                border-radius: 10px;
+                background-color: #d8d8d8;
+            }
+
+
+            #btn button a {
+                text-decoration: none;
+
+                font-size: 8px;
+                /* color: black; */
+            }
+
+        }
+
+        /* footer start hare */
+
+        .footer {
+
+            background-image: url("https://colorlib.com/preview/theme/archi/assets/img/gallery/footer_bg.png");
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+        }
+
+        footer p {
+
+            font-size: 5px;
+            margin-left: 22px;
+
+            /* padding: 671px 25px;*/
+        }
+
+        .last {
+            background-color: #4b8686bf;
+            /* border: 2px solid black; */
+            width: 261px;
+            height: 419px;
+
+            border-radius: 19px;
+            margin: 24px;
+            margin-top: 87px;
+            float: left;
+        }
+
+        .last h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+
+            margin-top: 10px;
+            font-family: cursive
+        }
+
+
+        .last img {
+            width: 230px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 25px;
+            margin-top: -6px;
+            margin-left: 13px;
+        }
+
+        .last span {
+            font-size: 27px;
+            text-align: center;
+            margin-left: 55px;
+        }
+
+        .last span a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .last ul {
+            margin-top: 56px;
+            font-size: 22px;
+            margin-left: -8px;
+        }
+
+        .last ul li {
+            list-style: none;
+            margin-bottom: 31px;
+        }
+
+        .last ul li a {
+            color: #ffffff;
+            font-size: 24px;
+            font-family: cursive;
+            text-decoration: none;
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav class="navbar">
+            <div id="logo">
+                <span>Oader</span>
+            </div>
+
+            <ul>
+                <li><a class="item" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Feedback</a></li>
+
+            </ul>
+        </nav>
+        <div class="box">
+            <div id="photo">
+                <img src="mobilephoto\mp1.jpg" alt="">
+            </div>
+
+            <div id="content">
+
+                <h1>Apple Z Flip (Gold, 8GB RAM, 256GB Storage) </h1>
+                <p>pixels resolution | Inner display 6.7 cover display - 1.05
+                    Memory, Storage & SIM: 8GB RAM | 256GB internal memory | Dual SIM (nano+nano) dual-standby (4G+4G)
+                    Android v10 operating system with 2.9GHz+2.4GHz+1.7GHz Snapdragon 855+ octa core processor
+                    3300mAH lithium-ion battery
+
+                </p>
+                <div id="btn">
+                    <button><a href="\oaderform.html">Oader Now</a></button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="box">
+            <div id="photo">
+                <img src="mobilephoto\MP3.jpg" alt="">
+            </div>
+
+            <div id="content">
+
+                <h1>Vivo v9 Z Flip (Gold, 8GB RAM, 256GB Storage) </h1>
+                <p>12+12MP dual rear camera setup OIS (wide) 2PD F1.8 + (ultra wide) FF F2.2 | 10MP F2.4 front punch
+                    hole camera
+                    17.01 centimeters (6.7-inch) HDR10+ dynamic AMOLED display with FHD+ resolution with 2636 x 1080
+                    pixels resolution | Inner display 6.7 cover display - 1.05
+                    Memory, Storage & SIM: 8GB RAM
+                </p>
+                <div id="btn">
+                    <button><a href="\oaderform.html">Oader Now</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div id="photo">
+                <img src="mobilephoto\mp4.jpg" alt="">
+            </div>
+
+            <div id="content">
+
+                <h1>Mi 6 Z Flip (Gold, 8GB RAM, 256GB Storage) </h1>
+                <p>12+12MP dual rear camera setup OIS (wide) 2PD F1.8 + (ultra wide) FF F2.2 | 10MP F2.4 front punch
+                    hole camera Inner display 6.7 cover display - 1.05
+                    Memory, Storage & SIM: 8GB RAM | 256GB internal memory | Dual SIM (nano+nano) dual-standby (4G+4G)
+                    Android v10 operating system with 2.9GHz+2.4GHz+1.7GHz Snapdragon 855+ octa core processor
+                    3300mAH lithium-ion battery
+                </p>
+                <div id="btn">
+                    <button><a href="\oaderform.html">Oader Now</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div id="photo">
+                <img src="mobilephoto\mp5.jpg" alt="">
+            </div>
+
+            <div id="content">
+
+                <h1>Oppo Z Flip (Gold, 8GB RAM, 256GB Storage) </h1>
+                <p>Ventimeters (6.7-inch) HDR10+ dynamic AMOLED display with FHD+ resolution with 2636 x 1080
+                    pixels resolution | Inner display 6.7 cover display - 1.05
+                    Memory, Storage & SIM: 8GB RAM | 256GB internal memory | Dual SIM (nano+nano) dual-standby (4G+4G)
+                    Android v10 operating system with 2.9GHz+2.4GHz+1.7GHz Snapdragon 855+ octa core processor
+                    3300mAH lithium-ion battery
+                </p>
+                <div id="btn">
+                    <button><a href="\oaderform.html">Oader Now</a></button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+
+        <div class="footer">
+
+
+            <div class="last">
+                <h1>
+                    company
+
+                </h1>
+                <img src="\mobilephoto\c.jpg" alt="">
+                <span>
+                    <a href="#">Co-Founder</a>
+                </span>
+            </div>
+            <div id="link" class="last">
+                <h1>
+                    Quick Links
+                </h1>
+
+
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="last">
+
+
+                <h1>
+                    New Products
+                </h1>
+
+                <ul>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Camera</a></li>
+                    <li><a href="#">Gift</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <h1>
+                    Support
+                </h1>
+
+
+                <ul>
+                    <li><a href="#">Asked Questions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Payment Issue</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <p>Report a Payment Issue
+            Copyright ©2020 All rights reserved | This template is made with by JANAk</p>
+
+    </footer>
+
+
+</body>
+
+</html>
